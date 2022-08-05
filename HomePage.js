@@ -272,3 +272,9 @@ const createInnerHtml = () => {
 
 }
 
+const update =(node)=> {
+    let employeePayrollData = empPayrollList.find(empData => empData.id==node.id)
+    if(!empPayrollData) return;
+    localStorage.setItem('editEmp',JSON.stringify(employeePayrollData))
+    window.location.replace(site_properties.add_emp_payroll_page);
+}
