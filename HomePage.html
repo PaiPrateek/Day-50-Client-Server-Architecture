@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HomePage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="logo.png">
+    <title>Employee Payroll Form</title>
+</head>
+
+<body>
+    <!-- UC1 Ability to create an Employee Payroll System Home Page UI-->
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="logo.png" alt="" style="width: 50px; height: 40px;">
+            <div>
+                <span class="emp-text">Employee</span><br>
+                <span class="emp-text emp-payroll">Payroll</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <!-- UC2 Ability to create a Header Section with Employee Details and Add Employee button -->
+        <div class="header-content">
+            <div class="emp-detail-text">
+                Employee Details <div class="emp-count">10</div>
+            </div>
+            <a href="EmployeePayrollApp.html" class="add-button">
+                <img src="add-24px.svg" alt="">Add User</a>
+        </div>
+        <!--   header-Content -->
+        <div class="table-main">
+            <table id="table-display" class="table">
+                <!-- UC3 Ability to view Employee Payroll details in a Tabular Format.-->
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Start Date</th>
+                    <th>Actions</th>
+                </tr>
+                <tr id="userdata">
+                    <td><img class="profile" alt="" src="Ellipse -9.png" style="width: 70px;
+                        height: 52px;"></td>
+                    <td>Prateek Pai</td>
+                    <td>Male</td>
+                    <td>
+                        <div class="dept-label">HR</div>
+                        <div class="dept-label">Finance</div>
+                    </td>
+                    <td>800000</td>
+                    <td>04 Nov 2021</td>
+                    <td>
+                        <img id="1" onclick="remove(this)" alt="delete" src="delete-black-18dp.svg">
+                        <img id="1" onclick="update(this)" alt="edit" src="create-black-18dp.svg">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="HomePage.js"></script>
+    <script src="Utility.js"></script>
+    <script src="SiteProperties.js"></script>
+    <script src="EmployeePayrollApp.js"></script>
+</body>
+
+</html>
