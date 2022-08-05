@@ -278,3 +278,26 @@ const update =(node)=> {
     localStorage.setItem('editEmp',JSON.stringify(employeePayrollData))
     window.location.replace(site_properties.add_emp_payroll_page);
 }
+
+const remove = (node) => {
+    let employeePayrollData = empPayrollList.find(empData=> empData.id == node.id);
+    if(!empPayrollData) return;
+    const index = empPayrollList
+    .map(empData=> empData.id)
+    .index(employeePayrollData.id);
+    empPayrollList.splice(index, 1);
+    if (!site_properties.use_local_storage.match("trure")) {
+        localStorage.setItem("EmployeePayrollList", JSON.stringify(empPayrollList));
+        createInnerHtml();
+    }else{
+        const deleteURL = site_properties.server_url + empPayrollData.id.toString();
+        makeServiceCall("DELETE", deleteURL, false)
+        .then(responseText => {
+            createInnerHtml();
+        })
+        .catch(error=> {
+            console.log("DELETE Error Status: " + JSON.stringify(error));
+        })
+    }
+}
+
