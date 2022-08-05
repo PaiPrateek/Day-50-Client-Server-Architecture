@@ -100,8 +100,8 @@ const createInnerHtml = () => {
                          <td>${empPayrollData._salary}</td>
                          <td>${empPayrollData._startDate}</td>
                          <td>
-                             <img id="${empPayrollData._id}" onclick="remove(this)" alt="delete" src="delete-black-18dp.svg">
-                             <img id="${empPayrollData._id}" onclick="update(this)" alt="edit" src="create-black-18dp.svg">
+                             <img id="${empPayrollData.id}" onclick="remove(this)" alt="delete" src="delete-black-18dp.svg">
+                             <img id="${empPayrollData.id}" onclick="update(this)" alt="edit" src="create-black-18dp.svg">
                          </td>
                 </tr>`;
 
@@ -121,7 +121,7 @@ const createEmployeePayrollJSON = () => {
             _salary: '500000',
             _startDate: '29 Oct 2021',
             _note: '',
-            _id: new Date().getTime(),
+            id: new Date().getTime(),
             _profilePic: 'Ellipse -3.png'
         },
         {
@@ -134,7 +134,7 @@ const createEmployeePayrollJSON = () => {
             _salary: '400000',
             _startDate: '29 Mar 2020',
             _note: '',
-            _id: new Date().getTime() + 1,
+            id: new Date().getTime() + 1,
             _profilePic: 'Ellipse -5.png'
         }
     ];
@@ -158,8 +158,8 @@ const createEmployeePayrollJSON = () => {
                         <td>${empPayrollData._salary}</td>
                         <td>${empPayrollData._startDate}</td>
                              <td>
-                                 <img id="${empPayrollData._id}" onclick="remove(this)" alt="delete" src="delete-black-18dp.svg">
-                                 <img id="${empPayrollData._id}" onclick="update(this)" alt="edit" src="create-black-18dp.svg">
+                                 <img id="${empPayrollData.id}" onclick="remove(this)" alt="delete" src="delete-black-18dp.svg">
+                                 <img id="${empPayrollData.id}" onclick="update(this)" alt="edit" src="create-black-18dp.svg">
                              </td>
                     </tr>`;
             
@@ -194,8 +194,8 @@ const createInnerHtml = () => {
            <td>${empPayrollData._salary}</td>
            <td>${empPayrollData._startDate}</td>
                 <td>
-                    <img id="${empPayrollData._id}" onclick="remove(this)" alt="delete" src="delete-black-18dp.svg">
-                    <img id="${empPayrollData._id}" onclick="update(this)" alt="edit" src="create-black-18dp.svg">
+                    <img id="${empPayrollData.id}" onclick="remove(this)" alt="delete" src="delete-black-18dp.svg">
+                    <img id="${empPayrollData.id}" onclick="update(this)" alt="edit" src="create-black-18dp.svg">
                 </td>
        </tr>`;
     }
@@ -245,8 +245,8 @@ const createInnerHtml = () => {
            <td>${empPayrollData._salary}</td>
            <td>${empPayrollData._startDate}</td>
                 <td>
-                    <img id="${empPayrollData._id}" onclick="remove(this)" alt="delete" src="delete-black-18dp.svg">
-                    <img id="${empPayrollData._id}" onclick="update(this)" alt="edit" src="create-black-18dp.svg">
+                    <img id="${empPayrollData.id}" onclick="remove(this)" alt="delete" src="delete-black-18dp.svg">
+                    <img id="${empPayrollData.id}" onclick="update(this)" alt="edit" src="create-black-18dp.svg">
                 </td>
        </tr>`;
     }
