@@ -1,34 +1,30 @@
 {
   "employees": [
     {
-      "id": 1,
-      "name": "Prateek",
-      "salary": "25000"
-    },
-    {
-      "id": 2,
-      "name": "Jagannath",
-      "salary": "60000"
-    },
-    {
-      "id": 3,
-      "name": "Karthik",
-      "salary": "55000"
-    },
-    {
-      "name": "Karthik",
-      "salary": "50000",
-      "id": 5
-    },
-    {
-      "name": "Karthik",
-      "salary": "50000",
-      "id": 6
-    },
-    {
-      "name": "Jaganath",
-      "salary": "55000",
-      "id": 7
-    }
+      "id":1,
+      "_name": "Prateek Pai",
+      "_gender": "Male",
+      "_department": [
+          "Engineering",
+          "Finance"
+      ],
+      "_salary": "500000",
+      "_startDate": "29 Oct 2021",
+      "_note": "",
+      "_profilePic": "Ellipse -3.png"
+  },
+  {
+    "id":1,
+    "_name": "vasanth Pai",
+    "_gender": "Male",
+    "_department": [
+        "Engineering",
+        "Finance"
+    ],
+    "_salary": "600000",
+    "_startDate": "20 Nov 2020",
+    "_note": "",
+    "_profilePic": "Ellipse -5.png"
+  }
   ]
 }
